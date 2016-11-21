@@ -2,25 +2,8 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-# to stop warnings about gnome-keyring
-unset GNOME_KEYRING_CONTROL
-
-export GIT_SSL_NO_VERIFY=1
-
-#R
-export LD_LIBRARY_PATH='/usr/lib':$LD_LIBRARY_PATH
-
-# Ruby
-export PATH=~/bin:~/Dropbox/bin:$PATH
-
-# Python
-export PYTHONPATH=/home/ajwaite/Documents/Code/Python
-
-gvim(){ /usr/bin/gvim -f "$@" & true; }
-
-export GTK_PATH="/usr/lib32/gtk-2.0"
-
 export TERM="xterm-256color"
+source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
